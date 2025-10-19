@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Read家庭英语伴学营</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.loli.net">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.loli.net/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #004aad 50%, #5de0e6 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .bounce-animation {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 scroll-smooth">
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <img src="https://qiniu2.smartschool.chat/crop/1760851236-a43028c1.jpg" 
+                     alt="虫妈 Alex" 
+                     class="w-48 h-48 rounded-full mx-auto border-8 border-white shadow-2xl object-cover"
+                     onerror="this.onerror=null;this.src='https://placehold.co/400x400/e2e8f0/4a5568?text=Teacher+Photo';">
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                虫妈 Alex
+            </h1>
+            <p class="text-xl md:text-2xl text-white mb-8 font-medium drop-shadow">
+                让英语学习更简单、高效、省妈
+            </p>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
+                    class="bg-white text-orange-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-50 transition-all transform hover:scale-105 shadow-lg bounce-animation">
+                点击立即咨询
+            </button>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">我是谁</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+                我是虫妈Alex，一名热爱英语教学研究的独立教育工作者，我致力于用更简单直接的方法帮助孩子夯实语言基础，让每一个孩子都既有“原版能力”又有“应试成绩”！
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover text-center">
+                    <div class="text-5xl mb-4">📅</div>
+                    <h3 class="text-2xl font-bold text-orange-500 mb-3">丰富经验</h3>
+                    <p class="text-gray-700 text-lg">10年+教学经验<br>专注线上少儿英语领域<br>陪伴上千名孩子成长</p>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover text-center">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="text-2xl font-bold text-blue-500 mb-3">专业资质</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>英语专业八级</li>
+                        <li>LTR家庭英语伴学营创始人</li>
+                        <li>前CRI英语新闻翻译</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 shadow-lg card-hover text-center">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold text-yellow-500 mb-3">专业领域</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>英语发音矫正</li>
+                        <li>自然拼读教学</li>
+                        <li>1V1线上伴学</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy and Achievements -->
+    <section class="py-16 px-4 bg-gradient-to-r from-blue-50 to-yellow-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Learn to Read & Read to Learn</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-500 mb-6 flex items-center">
+                        <span class="text-3xl mr-3">💡</span> 教学理念
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>夯实语言基础，实现高效阅读</strong>
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        依托Structured Literacy（结构化读写）理论，重视英语听说能力培养，再进一步从音素、自然拼读、音节、词法、句法和阅读理解6大角度培养孩子的语言综合能力，
+                        让孩子能够从容应对英语教材改版和考试难度加大的问题。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-orange-500 mb-6 flex items-center">
+                        <span class="text-3xl mr-3">🧮</span> 教学目标
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>掌握标准美式发音，口语表达流利自然</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>熟练运用自拼规则，拼读词汇量2000+</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>快速实现自主阅读，阅读词汇量1500+</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>无障碍裸听《哈利波特》英语原版书</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>语法满分保证，英语成绩显著提升</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum System -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">LTR家庭英语伴学营体系</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-3xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🎵</div>
+                    <h3 class="text-xl font-bold text-yellow-600 mb-2">原版听说营</h3>
+                    <p class="text-sm text-gray-600 mb-3">适合5-6岁 0基础启蒙</p>
+                    <p class="text-gray-700 text-sm">
+                        通过儿歌、故事绘本，轻松积累4000+听力词汇，培养英语语感。
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🔤</div>
+                    <h3 class="text-xl font-bold text-blue-600 mb-2">自然拼读营</h3>
+                    <p class="text-sm text-gray-600 mb-3">适合6-8岁 进阶提升</p>
+                    <p class="text-gray-700 text-sm">
+                        深入学习音素和拼读规则，掌握标准语音语调，实现自主阅读。
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-100 to-green-50 rounded-3xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold text-green-600 mb-2">单词速记营</h3>
+                    <p class="text-sm text-gray-600 mb-3">适合8岁+ 词汇拓展</p>
+                    <p class="text-gray-700 text-sm">
+                        精选KET真题1500词，通过音素拆分等方法实现单词快速识记。
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-3xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-4">📝</div>
+                    <h3 class="text-xl font-bold text-purple-600 mb-2">图解语法营</h3>
+                    <p class="text-sm text-gray-600 mb-3">适合8岁+ 语法强化</p>
+                    <p class="text-gray-700 text-sm">
+                        运用Sentence Diagram图解法，分层教授语法，提升读写能力。
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-100 to-red-50 rounded-3xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold text-red-600 mb-2">满分备考营</h3>
+                    <p class="text-sm text-gray-600 mb-3">适合10岁+ 考前突击</p>
+                    <p class="text-gray-700 text-sm">
+                        系统备考小升初、剑桥KET&PET，专项能力提升。
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-3xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-4">👨‍🏫</div>
+                    <h3 class="text-xl font-bold text-purple-600 mb-2">1V1定制营</h3>
+                    <p class="text-sm text-gray-600 mb-3">全年龄段个性化辅导</p>
+                    <p class="text-gray-700 text-sm">
+                       定制专属学习计划，全程陪伴成长，保证学习效果
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Testimonials -->
+    <section class="py-16 px-4 bg-gradient-to-r from-orange-50 to-yellow-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">学员100%好评</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-6 shadow-lg relative">
+                    <div class="text-4xl text-yellow-400 mb-4">❝</div>
+                    <p class="text-gray-700 mb-4 italic">
+                        孩子刚上Alex老师的课时完全零基础，我们担心他会跟不上。没想到短短8周，他就能独立拼读简单的单词了！现在每天主动要求上英语课，发音越来越标准，我们真的很感动。Alex老师的教学方法太神奇了！
+                    </p>
+                    <p class="text-right text-gray-600 font-semibold">
+                        — 王女士, mother of 乐乐 (7岁)
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg relative">
+                    <div class="text-4xl text-blue-400 mb-4">❝</div>
+                    <p class="text-gray-700 mb-4 italic">
+                        我家孩子10岁，之前英语成绩一直在及格线徘徊。参加自然拼读营3个月后，不仅词汇量突飞猛进，还能听懂简单的英文故事了。最惊喜的是，他敢主动和外国人打招呼了！感谢Alex老师打开了孩子英语学习的大门。
+                    </p>
+                    <p class="text-right text-gray-600 font-semibold">
+                        — 李先生, father of 明明 (10岁)
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-6 shadow-lg relative">
+                    <div class="text-4xl text-green-400 mb-4">❝</div>
+                    <p class="text-gray-700 mb-4 italic">
+                        我考察了很多英语老师，最终选择了Alex。她专业功底扎实，还懂孩子心理。孩子开始发音问题很严重，在Alex的耐心指导下大变样！这种进步是我们做梦都没想到的。强烈推荐给所有想让孩子学好英语的家长！
+                    </p>
+                    <p class="text-right text-gray-600 font-semibold">
+                        — 张女士, mother of 豆豆 (8岁)
+                    </p>
+                </div>
+                     
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-gradient-to-br from-yellow-100 via-blue-100 to-orange-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">找到我</h2>
+            <p class="text-xl text-gray-700 mb-12">
+                马上和虫妈一起开启英语学习之旅！
+            </p>
+            
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold text-orange-500 mb-4">联系方式</h3>
+                        <p class="text-gray-700 mb-2 flex items-center">
+                            <span class="text-2xl mr-3">📱</span>
+                            电话：
+                            15503285096
+                        </p>
+                        <p class="text-gray-700 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">📺</span>
+                            公众号&视频号：
+                            虫妈英语听说
+                        </p>
+                        <p class="text-gray-700 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">💯</span>
+                            教学对象：
+                            5-8岁儿童  | 0基础到小升初
+                        </p>
+                        <div class="mt-6">
+                            <button class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all transform hover:scale-105">
+                                立即扫码报名
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center">
+                        <div class="bg-white p-4 rounded-2xl shadow-lg">
+                            <img src="https://qiniu2.smartschool.chat/media/woker_img/1760851236-0cba36b7.jpg" 
+                                 alt="微信二维码" 
+                                 class="w-48 h-48 rounded-xl"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/200x200/e2e8f0/4a5568?text=WeChat+QR';">
+                            <p class="text-sm text-gray-600 mt-2 text-center">Scan to Connect on WeChat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-sm">
+                © 2025 虫妈 Alex All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
